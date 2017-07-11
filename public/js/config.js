@@ -3,8 +3,15 @@ require.config({
     paths: {
         jquery: 'jquery/jquery',
         template: 'artTemplate/template-web',
+        bootstrap:'bootstrap/js/bootstrap.min',
         cookie: 'jquery-cookie/jquery.cookie',
         common: '../js/common',
-        login: '../js/login'
+        login: '../js/login',
+        teacher_list:'../js/teacher-list'
+    },
+    shim:{
+        bootstrap:{
+            deps:['jquery']
+        }
     }
 });
