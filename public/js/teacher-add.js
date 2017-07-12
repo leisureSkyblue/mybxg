@@ -1,6 +1,9 @@
 define(['jquery', 'template','util'], function ($, template, util) {
     // 添加或者编辑讲师
 
+    // 设置导航菜单选中高亮
+    util.setMenu('/teacher/list');
+
     // 获取讲师id
     var tcId = util.qs('tc_id', location.search);
     if (tcId) {

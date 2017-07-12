@@ -1,4 +1,8 @@
-﻿define(['jquery', 'template', 'bootstrap'], function ($, template) {
+﻿define(['jquery', 'template','util', 'bootstrap'], function ($, template, util) {
+    
+    // 设置导航菜单选中高亮
+    util.setMenu(location.pathname);
+    
     //通过ajax请求对teacher-list页面进行渲染
     $.ajax({
         type: 'get',
