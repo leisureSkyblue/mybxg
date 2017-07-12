@@ -38,7 +38,6 @@
                     dataType: 'json',
                     success: function (data) {
                         td.attr('data-tcStatus', data.result.tc_status);
-                        console.log(data.result.tc_status);
                         if (data.result.tc_status == 0) {
                             $(that).text("注销");
                         } else {
