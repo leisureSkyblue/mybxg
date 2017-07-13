@@ -11,6 +11,7 @@ require.config({
         cookie: 'jquery-cookie/jquery.cookie',
         uploadify: 'jquery-uploadify/jquery.uploadify',
         region: 'jquery-region/jquery.region',
+        editor:'ckeditor/ckeditor',
 
         common: '../js/common',
         login: '../js/login',
@@ -32,6 +33,9 @@ require.config({
         },
         uploadify:{
             deps : ['jquery']
+        },
+        editor : {
+            exports : 'CKEDITOR'
         }
     }
 });
