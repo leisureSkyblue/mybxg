@@ -9,6 +9,9 @@ require.config({
         validate:'jquery-validate/jquery-validate',
         form: 'jquery-form/jquery.form',
         cookie: 'jquery-cookie/jquery.cookie',
+        uploadify: 'jquery-uploadify/jquery.uploadify',
+        region: 'jquery-region/jquery.region',
+
         common: '../js/common',
         login: '../js/login',
         teacher_list:'../js/teacher-list',
@@ -26,6 +29,9 @@ require.config({
         },
         validate:{
             deps:['jquery']
+        },
+        uploadify:{
+            deps : ['jquery']
         }
     }
 });
