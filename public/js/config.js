@@ -7,6 +7,7 @@ require.config({
         datepicker:'bootstrap-datepicker/js/bootstrap-datepicker.min',
         language:'bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
         validate:'jquery-validate/jquery-validate',
+        form: 'jquery-form/jquery.form',
         cookie: 'jquery-cookie/jquery.cookie',
         common: '../js/common',
         login: '../js/login',
