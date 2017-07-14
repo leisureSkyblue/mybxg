@@ -49,7 +49,7 @@ define(['jquery', 'template', 'util', 'editor', 'uploadify', 'region', 'datepick
                     var d = $("#d option:selected").text();
                     var hometown = p + '|' + c + '|' + d;
                     // 处理表单提交
-                    $("this").ajaxSubmit({
+                    $(this).ajaxSubmit({
                         type:'post',
                         url:'/api/teacher/modify',
                         data:{tc_hometown:hometown},
