@@ -18,7 +18,7 @@ define(['jquery'], function ($) {
 
     // 设置导航菜单选中后高亮
     function setMenu(pathname) {
-        $('.aside .navs a[href="'+pathname+'"]').addClass('active');
+        $('.aside .navs a[href="'+pathname+'"]').addClass('active').closest('ul').show();
     }
 
     return {
