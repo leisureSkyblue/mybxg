@@ -15,11 +15,12 @@ define(['jquery', 'template', 'util', 'editor', 'uploadify', 'region', 'datepick
                 height: 120,
                 buttonText: '',
                 fileObjName: 'tc_avatar',
-                swf: '/public/assets/jquery-uploadify/uploadify.swf',
-                uploader: '/api/uploader/avatar',
+                swf : '/public/assets/jquery-uploadify/uploadify.swf',
+                uploader : '/api/uploader/avatar',
                 onUploadSuccess: function (a, b, c) {
                     // 修改图片地址
-                    $("#settingsInfo img").attr('src', b.result.path);
+                    var obj = JSON.parse(b);
+                    $("#settingsInfo img").attr('src', obj.result.path);
                 }
             });
             // 省市县联动

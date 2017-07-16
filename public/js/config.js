@@ -9,7 +9,7 @@ require.config({
         validate:'jquery-validate/jquery-validate',
         form: 'jquery-form/jquery.form',
         cookie: 'jquery-cookie/jquery.cookie',
-        uploadify: 'jquery-uploadify/jquery.uploadify',
+        uploadify: 'jquery-uploadify/jquery.uploadify.min',
         region: 'jquery-region/jquery.region',
         editor:'ckeditor/ckeditor',
 
